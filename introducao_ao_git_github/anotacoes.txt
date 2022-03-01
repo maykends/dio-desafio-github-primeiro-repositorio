@@ -3,3 +3,23 @@ Link para download do Git: https://git-scm.com/
 Git é um sistema de controle de versão distribuído gratuito e de código aberto projetado para lidar com tudo, desde projetos pequenos a muito grandes com velocidade e eficiência.
 
 O Git é fácil de aprender e tem uma pegada pequena com desempenho extremamente rápido . Ele supera ferramentas SCM como Subversion, CVS, Perforce e ClearCase com recursos como ramificação local barata , áreas de teste convenientes e vários fluxos de trabalho.
+
+
+…or create a new repository on the command line
+echo "# ss" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/maykends/ss.git
+git push -u origin master
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/maykends/ss.git
+git branch -M master
+git push -u origin master
+
+
+…or import code from another repository
+You can initialize this repository with code from a Subversion, Mercurial, or TFS project.
